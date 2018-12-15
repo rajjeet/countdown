@@ -1,6 +1,15 @@
 import React from 'react';
-import {FlatList, Text} from 'react-native';
+import {FlatList, StyleSheet} from 'react-native';
+
 import EventCard from "./EventCard";
+
+const styles = StyleSheet.create({
+    list: {
+        flex: 1,
+        paddingTop: 20,
+        backgroundColor: '#F3F3F3'
+    }
+});
 
 class EventList extends React.Component {
     constructor(props) {
@@ -23,6 +32,7 @@ class EventList extends React.Component {
         const {events} = this.state;
         return (
             <FlatList
+                style={styles.list}
                 data={events}
                 keyExtractor={item => item.id}
                 renderItem={

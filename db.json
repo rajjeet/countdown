@@ -2,22 +2,22 @@
   "events": [
     {
       "title": "Sensor starting",
-      "date": "2018-04-21T00:20:40.000Z",
+      "date": "2019-04-21T00:20:40.000Z",
       "id": "23asd4-234242-3423aad4234"
     },
     {
       "title": "Sensor detected an action",
-      "date": "2018-05-01T01:40:20.000Z",
+      "date": "2019-05-01T01:40:20.000Z",
       "id": "2342342423-42342-3324"
     },
     {
       "title": "Sensor reconfiguring",
-      "date": "2018-06-12T02:04:50.000Z",
+      "date": "2019-06-12T02:04:50.000Z",
       "id": "2342342-42asda-423asd34"
     },
     {
       "title": "Sensor shutting down",
-      "date": "2018-07-01T03:02:00.000Z",
+      "date": "2019-07-01T03:02:00.000Z",
       "id": "2342342-4234234a-sdf234"
     }
   ]
