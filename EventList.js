@@ -4,20 +4,26 @@ import {FlatList, Text} from 'react-native';
 class EventList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            events: []
+        };
     }
 
     componentDidMount() {
+        const events = require('./db.json').events;
+        this.setState({events});
 
     }
 
     render() {
+        console.log(this.state.events);
+        const {events} = this.state;
         return (
             <FlatList
-                data={[{name: 'a'}, {name: 'b'}]}
-                keyExtractor={(item, index) => item.name}
+                data={events}
+                keyExtractor={item => item.id}
                 renderItem={
-                    ({item}) => <Text>{item.name}</Text>
+                    ({item}) => <Text>{item.title}</Text>
                 }
             />
         );
